@@ -3,10 +3,11 @@ form p{
     width: 50%;
 }
 body{
-    vertical-align: middle;
+    display: block;
+    transform: translateY(120px);
 }
 html{
-    background: radial-gradient( aqua, teal, black);
+    background: linear-gradient(0deg, rgba(12,5,128,1) 0%, rgba(6,6,200,1) 50%, rgba(0,212,255,1) 100%);
     color: white;
     height: 100%;
     text-align: center;
@@ -26,9 +27,40 @@ button{
     margin: 2px;
     font-size: 15px;
     box-shadow: indigo 3px 3px 3px;
+    border-radius: 20px;
+    -webkit-transition: background-color .5s ease-out;
+        -moz-transition: background-color .5s ease-out;
+        -o-transition: background-color .5s ease-out;
+        transition: background-color .5s ease-out;
+}
+button:hover{
+    background-color:rgb(255, 210, 151)
 }
 form, p{
     color:rgb(236, 178, 71);
     font-size: 20px;
     text-shadow: black 2px 2px 2px;
+}
+form{
+    font-size: 35px;
+    display: block;
+    width: 100%;
+   transform: translateY(-100px);
+}
+div{
+    font-size: 30px;
+}
+section{
+    display: block;
+    float: left;
+    transform: translateX(100px);
+}
+article{
+    display: block;
+    float: right;
+    transform: translateX(-100px);
+}
+p#name{
+    display: block;
+    transform: translateY(130px);
 }
